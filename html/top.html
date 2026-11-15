@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SNT Studio</title>
+	<style>
+		body {
+			background-color: #000;
+			color: #c4d1e4;
+			font-size: 13px;
+		}
+
+		a {
+			color: #b994cb;
+		}
+
+		a:visited {
+			color: #b994cb;
+		}
+
+		a:hover {
+			color: #fff0b8;
+		}
+
+		h1 {
+			font-size: 16px;
+			margin-bottom: -8px;
+			color: #d1e4f8;
+		}
+
+		h2 {
+			font-size: 16px;
+			margin-top: 24px;
+			margin-bottom: -8px;
+			color: #d1e4f8;
+		}
+
+		p {
+			color: #b994cb;
+			font-size: 13px;
+		}
+
+		.Grey {
+			color: #848484;
+			font-size: 16px;
+		}
+
+		.Text {
+			max-width: 650px;
+			margin: 0 auto;
+			margin-top: 280px;
+			text-align: left;
+		}
+
+		.Contents {
+			max-width: 550px;
+			margin: 0 auto;
+			margin-bottom: 64px;
+			text-align: left;
+			transform: translate(-50px);
+		}
+
+		.Menu {
+			background-color: rgba(8, 12, 26, .82);
+		}
+
+		.Logo {
+			background-image: url(img/hplogo2.png);
+			background-repeat: no-repeat;
+		}
+
+		footer {
+			max-width: 1000px;
+			text-align: center;
+			margin-bottom: 28px;
+		}
+
+		address {
+			max-width: 1000px;
+			font-size: 14px;
+			text-align: center;
+		}
+
+		Main {
+			background-color: rgba(8, 12, 26, .82);
+		}
+	</style>
+
+
+	<script>
+		Img = new Array(6);
+		for (i = 0; i < 6; i++) {
+			Img[i * 2] = new Image();
+			Img[i * 2].src = "img/bt_" + i + ".png";
+			Img[i * 2 + 1] = new Image();
+			Img[i * 2 + 1].src = "img/bt_" + i + "b.png";
+		}
+
+		function ImgOn(m, ind2) {
+			if (document.images)
+				m.src = Img[ind2 * 2 + 1].src;
+		}
+
+		function ImgOff(m, ind2) {
+			if (document.images)
+				m.src = Img[ind2 * 2].src;
+		}
+	</script>
+</head>
+
+<body class="Logo">
+	<div class="Text">
+		<h1>ようこそ</h1>
+		<p>
+			「SNT Studio」は、弾幕シューティングゲームや音楽を制作している二人組のサークルです。
+		</p>
+	</div>
+	<nav aria-label="コンテンツ">
+		<div class="Contents">
+			<h2><b>&lt;ニュース&gt;</b></h2>
+			<p>
+				特に何もありません。
+			</p>
+
+			<h2>
+				<b>&lt;更新&gt;</b>
+			</h2>
+			<p>
+				2026年11月15日　サイトを大幅に改修（<a href="top.html">サイト</a>）<br>
+				2026年10月4日　サイトを公開。（<a href="top.html">サイト</a>）<br>
+				2026年10月3日　サイトを作成。（<a href="top.html">サイト</a>）
+			</p>
+			<p class="Grey">最終更新ー2026年10月5日</p>
+			<h2>
+				<b>&lt;コンテンツ&gt;</b>
+			</h2>
+			<p class="Menu">
+
+				<a href="news.html">
+					<img src="img/bt_0.png" height="32" width="256" border="0" hspace="0" vspace="0"
+						onMouseOver=ImgOn(this,0) onMouseOut=ImgOff(this,0) alt="活動履歴ページへのボタン"></a>
+				活動履歴のとか<br>
+
+				<a href="game.html">
+					<img src="img/bt_1.png" height="32" width="256" border="0" hspace="0" vspace="0"
+						onMouseOver=ImgOn(this,1) onMouseOut=ImgOff(this,1) alt="作ったゲームページへのボタン"></a>
+				作ったゲームとか<br>
+
+				<a href="music.html">
+					<img src="img/bt_2.png" height="32" width="256" border="0" hspace="0" vspace="0"
+						onMouseOver=ImgOn(this,2) onMouseOut=ImgOff(this,2) alt="作った曲ページへのボタン"></a>
+				作った曲とか<br>
+
+				<a href="tool.html">
+					<img src="img/bt_5.png" height="32" width="256" border="0" hspace="0" vspace="0"
+						onMouseOver=ImgOn(this,5) onMouseOut=ImgOff(this,5) alt="ツール、素材ページへのボタン"></a>
+				ツール、素材とか<br>
+
+				<a href="support.html">
+					<img src="img/bt_3.png" height="32" width="256" border="0" hspace="0" vspace="0"
+						onMouseOver=ImgOn(this,3) onMouseOut=ImgOff(this,3) alt="サポートページへのボタン"></a>
+				サポート<br>
+
+				<a href="IamI.html">
+					<img src="img/bt_4.png" height="32" width="256" border="0" hspace="0" vspace="0"
+						onMouseOver=ImgOn(this,4) onMouseOut=ImgOff(this,4) alt="自己紹介ページへのボタン"></a>
+				自己紹介とか<br>
+			</p>
+		</div>
+	</nav>
+	<footer class="footer">
+		当ページは、横解像度800以上、最近のブラウザで見ることを想定しています。
+		<br>
+		<br>
+		リンク、トラックバックはお好きなように。<br>
+		リンク及びブックマークは <A href="https://sntstudiogithub.io/">https://sntstudiogithub.io/</A>
+		にお願いします。
+	</footer>
+
+	<address>
+		同人サークル　SNT Studio　<A href="mailto:sntstudio.ori@gmail.com">sntstudio.ori@gmail.com</A>
+		<br>
+		同人サークル　SNT Studio　代表1　SR　<A href="mailto:sr.ori.jp@gmail.com">sr.ori.jp@gmail.com</A>
+		<br>
+		同人サークル　SNT Studio　代表2　NK
+	</address>
+</body>
+
+</html>
